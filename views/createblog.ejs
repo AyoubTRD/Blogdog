@@ -1,0 +1,27 @@
+<% include partials/header %>
+<div class="container">
+<div class="row">
+  <div class="form">
+  <h1 class="text-center mx-auto">Create a new Post</h1>
+  <div class="col-lg-7 col-md-10 col-sm-12 col-xs-12 mx-auto">
+  <form action="/blogs" method="POST">
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Blogpost's Title" name="title">
+    </div>
+    
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Blogpost's Image" name="image">
+    </div>
+
+    <div class="form-group">
+        <label for="desc">Add description to your Blog:</label>
+        <textarea name="content" id="desc" cols="30" rows="8" class="form-control" ></textarea>
+    </div>
+
+    <button class="btn btn-lg form-button">Add Blogpost</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<% include partials/footer %>

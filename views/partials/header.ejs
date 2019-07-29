@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: "Montserrat", sans-serif;
+    }
+    body {
+      background-color: #F1F2F2;
+    }
+    .blue-bg{
+      background-color: #1EC9E8;
+      -webkit-box-shadow: 1px 13px 34px -22px rgba(98,142,163,1);
+      -moz-box-shadow: 1px 13px 34px -22px rgba(98,142,163,1);
+      box-shadow: 1px 13px 34px -22px rgba(98,142,163,1) 
+    }
+    .nav-btn {
+      height: 100%;
+      transition: 0.65s;
+      padding: 10px 30px;
+    }
+    .nav-btn:hover{
+      background-color: #F2F8FD;
+      color: #1EC9E8!important;
+      border-right: solid 4px rgba(183, 212, 255, 0.5);
+    }
+    #icon{
+      width:25%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    input{
+      background: none!important;
+      border: none!important;
+      border-bottom: 3px solid #939598!important;
+      border-radius: 0!important;
+      transition: 1s!important;
+    }
+    input:focus{
+      border-bottom-color: #F2F8FD!important;
+      box-shadow: none!important;
+    }
+    .form{
+      display: inline-block;
+      background-color: white;
+      margin: 15px auto;
+      padding: 15px 20px;
+      border-radius: 3%;
+      border: 3px solid #1EC9E8;
+      -webkit-box-shadow: -1px 14px 49px 0px rgba(0,0,0,0.19);
+      -moz-box-shadow: -1px 14px 49px 0px rgba(0,0,0,0.19);
+      box-shadow: -1px 14px 49px 0px rgba(0,0,0,0.19);
+    }
+    .form textarea {
+      border-radius: 12% 3%!important;
+    }
+    .form textarea:focus{
+      box-shadow: none;
+    }
+    .form .form-button{
+      border-radius: 50px;
+      width: 70%;
+      display: inline-block;
+      margin: 10px 50px;
+      padding: 10px 15px;
+      border-color: #1EC9E8;
+      background-color: none;
+      color: #1EC9E8;
+      transition: 0.6s;
+    }
+    .form .form-button:hover{
+      background-color: #1EC9E8;
+      color: white;
+    }
+    .form h1{
+      font-size: 80px;
+    }
+    img{
+      max-width:100%;
+      border-radius: 5px;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .date {
+      color: rgba(0, 80, 132, 0.65)
+    }
+    .posts-container {
+      border: rgba(147, 149, 152, 0.5) solid 3px;
+      margin-top: 4%;
+      -webkit-box-shadow: 10px 10px 54px 1px rgba(0,0,0,0.18);
+      -moz-box-shadow: 10px 10px 54px 1px rgba(0,0,0,0.18);
+      box-shadow: 10px 10px 54px 1px rgba(0,0,0,0.18);
+      border-radius: 25px;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark blue-bg">
+    <div class="container-fluid">
+    <a href="/" class="navbar-brand text-dark"><img src="https://img.icons8.com/ios-filled/50/000000/dog-park.png" id="icon"><strong>Blogdog</strong></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarItems"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarItems">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="navbar-item"><a href="/blogs" class="btn nav-btn text-white" class="nav-link">Home</a></li>
+        <li class="navbar-item"><a href="/createblog" class="btn nav-btn text-white" class="nav-link">New Post</a></li>
+      </ul>
+    </div>    
+  </div>
+  </nav>
+
